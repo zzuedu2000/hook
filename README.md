@@ -6,7 +6,9 @@ linux kernel 5.6 hook实例代码
 https://blog.csdn.net/qq_21792169/article/details/84583275
 
 2、需要对ko模块加签名
+
 scripts/sign-file sha512 certs/signing_key.pem certs/signing_key.x509  HookDriver/HookDriver.ko
+
 scripts/sign-file sha512 certs/signing_key.pem certs/signing_key.x509  HookHere/HookHere.ko
 
 3、把text_poke_smp修改为text_poke，text_poke_smp函数在内核中已不存在
